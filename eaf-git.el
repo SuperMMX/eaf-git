@@ -279,9 +279,9 @@ will be added if not present."
   :type '(choice (const :tag "Expanded" "expanded")
                  (const :tag "Collapsed" "collapsed")))
 
-(defcustom eaf-git-show-whole-untracked-diff nil
+(defcustom eaf-git-show-whole-untracked-diff t
   "Show the whole diff for all untracked files"
-  :type 'boolean) 
+  :type 'boolean)
 
 (add-to-list 'eaf-app-binding-alist '("git" . eaf-git-keybinding))
 
